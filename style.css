@@ -91,6 +91,12 @@ h1 {
     z-index: -1;
 }
 
+#content {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 #content button {
     position: relative;
 
@@ -100,22 +106,16 @@ h1 {
     color: white;
     border: 2px solid white;
     padding: 10px 20px;
-    cursor: pointer;
 
     font-size: 16px;
 
-    width: 50%;
+    width: 100%;
 }
 
 #content button:hover {
     background-color: white;
     color: black;
-}
-
-#content {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    cursor: pointer;
 }
 
 .outer {
@@ -124,6 +124,10 @@ h1 {
     align-items: center;
 }
 
-a {
+.outer a {
     text-decoration: none;
+    text-wrap: nowrap;
+
+    width: fit-content;
+    margin: 0 10px;
 }
